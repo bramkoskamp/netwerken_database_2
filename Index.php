@@ -7,8 +7,28 @@
 </head>
 <body>
     <h1><?php echo "Hello World" ?></h1>
-    <?php ini_set('display_errors', 'On');
-          error_reporting(E_ALL);
-    ?>
+
+    
 </body>
+<?php #ini_set('display_errors', 'On');
+          #error_reporting(E_ALL);
+
+          $host     = 'localhost';
+          $db       = 'phptest';
+          $user     = 'harry';
+          $password = 'harry';
+          $port     = 3306;
+          $charset  = 'utf8mb4';
+          
+          mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+          $db = new mysqli($host, $user, $password, $db, $port);
+          $db->set_charset($charset);
+          $db->options(MYSQLI_OPT_INT_AND_FLOAT_NATIVE, 1);
+    
+          $result = $db->query("SELECT * FROM onzin");
+          while ($row = $result->fetch_assoc()) {
+              echo  $row['id']." - ".$row['name']."<br />\n";
+          }
+
+ ?>
 </html>
