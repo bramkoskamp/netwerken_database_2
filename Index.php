@@ -13,7 +13,7 @@
 <?php       ini_set('display_errors', 'On');
             error_reporting(E_ALL);
 
-          $host     = 'net24pveltman.gc-webhosting.nl';
+          $host     = 'localhost';
           $db       = 'net24pveltman_phptest';
           $user     = 'net24pveltman_harry';
           $password = '@cVw#+C}#P.a';
