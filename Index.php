@@ -16,7 +16,7 @@
           $host     = 'net24pveltman.gc-webhosting.nl';
           $db       = 'net24pveltman_phptest';
           $user     = 'net24pveltman_harry';
-          $password = '(@TqwI,2tvXZ';
+          $password = '@cVw#+C}#P.a';
           $port     = 3306;
           $charset  = 'utf8mb4';
           
