@@ -13,10 +13,10 @@
 <?php #ini_set('display_errors', 'On');
           #error_reporting(E_ALL);
 
-          $host     = 'localhost';
-          $db       = 'phptest';
-          $user     = 'harry';
-          $password = 'harry';
+          $host     = 'https://gc-webhosting.nl:2083/';
+          $db       = 'net24pveltman_phptest';
+          $user     = 'net24pveltman_harry';
+          $password = '(@TqwI,2tvXZ';
           $port     = 3306;
           $charset  = 'utf8mb4';
           
