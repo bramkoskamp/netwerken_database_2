@@ -6,7 +6,7 @@
     <title>Homepage</title>
 </head>
 <body>
-    <h1><?php echo "Hello World" ?></h1>
+    <h1><?php echo "Website Users" ?></h1>
 
     
 </body>
@@ -14,9 +14,9 @@
             error_reporting(E_ALL);
 
           $host     = 'localhost';
-          $db       = 'net24pveltman_phptest';
-          $user     = 'net24pveltman_harry';
-          $password = '@cVw#+C}#P.a';
+          $db       = 'phptest';
+          $user     = 'harry';
+          $password = 'harry';
           $port     = 3306;
           $charset  = 'utf8mb4';
           
@@ -25,9 +25,9 @@
           $db->set_charset($charset);
           $db->options(MYSQLI_OPT_INT_AND_FLOAT_NATIVE, 1);
     
-          $result = $db->query("SELECT * FROM onzin");
+          $result = $db->query("SELECT * FROM users");
           while ($row = $result->fetch_assoc()) {
-              echo  $row['id']." - ".$row['name']."<br />\n";
+              echo  $row['id']." - ".$row['first_name']." ".$row['last_name']." - ".$row['Date_Of_Birth']."<br />\n";
           }
 
  ?>
