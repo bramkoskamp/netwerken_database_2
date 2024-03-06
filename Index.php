@@ -10,8 +10,8 @@
 
     
 </body>
-<?php #ini_set('display_errors', 'On');
-          #error_reporting(E_ALL);
+<?php       ini_set('display_errors', 'On');
+            error_reporting(E_ALL);
 
           $host     = 'https://gc-webhosting.nl:2083/';
           $db       = 'net24pveltman_phptest';
