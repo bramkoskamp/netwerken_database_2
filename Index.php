@@ -7,28 +7,15 @@
 </head>
 <body>
     <h1><?php echo "Website Users" ?></h1>
-
-    
+    <form action="Insert.php" method="POST">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="bdate">Date of birth:</label><br>
+        <input type="date" id="bdate" name="bdate"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
 </body>
-<?php       ini_set('display_errors', 'On');
-            error_reporting(E_ALL);
-
-          $host     = 'localhost';
-          $db       = 'phptest';
-          $user     = 'harry';
-          $password = 'harry'; #QhkEsIp$SA)p
-          $port     = 3306;
-          $charset  = 'utf8mb4';
-          
-          mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-          $db = new mysqli($host, $user, $password, $db, $port);
-          $db->set_charset($charset);
-          $db->options(MYSQLI_OPT_INT_AND_FLOAT_NATIVE, 1);
-    
-          $result = $db->query("SELECT * FROM users");
-          while ($row = $result->fetch_assoc()) {
-              echo  $row['id']." - ".$row['first_name']." ".$row['last_name']." - ".$row['Date_Of_Birth']."<br />\n";
-          }
-
- ?>
 </html>
