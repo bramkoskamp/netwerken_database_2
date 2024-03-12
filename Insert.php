@@ -10,15 +10,17 @@
         ini_set('display_errors', 'On');
         error_reporting(E_ALL);
 
-        $host     = 'localhost';
-        $db       = 'net24pveltman_users';
-        $user     = 'net24pveltman_user';
-        $password = '(2uuVWw)#J_='; #QhkEsIp$SA)p
-        $port     = 3306;
+        $host     = 'https://gc-webhosting.nl';
+        $db       = 'net24pveltman_phptest';
+        $user     = 'net24pveltman_dinges';
+        $password = '0LrW^;ab&Rw?';
+        $port     = 2083;
         $charset  = 'utf8mb4';
           
         mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
         $db = new mysqli($host, $user, $password, $db, $port);
+
         $db->set_charset($charset);
         $db->options(MYSQLI_OPT_INT_AND_FLOAT_NATIVE, 1);
     
