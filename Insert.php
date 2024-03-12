@@ -10,12 +10,11 @@
         ini_set('display_errors', 'On');
         error_reporting(E_ALL);
 
-        $host     = 'https://gc-webhosting.nl';
-        $db       = 'net24pveltman_phptest';
-        $user     = 'net24pveltman_dinges';
-        $password = '0LrW^;ab&Rw?';
+        $host     = 'localhost';
+        $db       = 'net24bkoskamp_db_netwerken';
+        $user     = 'net24bkoskamp_bram';
+        $password = '@ppel123!';
         $port     = 2083;
-        $charset  = 'utf8mb4';
           
         mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
