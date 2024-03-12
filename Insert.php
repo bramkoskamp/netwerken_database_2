@@ -10,12 +10,12 @@
     ini_set('display_errors', 'On');
     error_reporting(E_ALL);
 
-    $host = 'gebruikersnaam.gc-webhosting.nl';
-    $dbname = 'database_name';
-    $user = 'gebruikersnaam';
-    $password = 'your_password';
-    $port = '3306';
-    $charset = 'utf8mb4';
+    $host     = 'localhost';
+    $db       = 'net24bkoskamp_db_netwerken';
+    $user     = 'net24bkoskamp_bram';
+    $password = 'Welkom123!';
+    $port     = 2083;
+    $charset  = 'utf8mb4';
 
     $dsn = "mysql:host=$host;dbname=$dbname;port=$port;charset=$charset";
 
