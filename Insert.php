@@ -13,7 +13,7 @@
         $host     = 'localhost';
         $db       = 'net24bkoskamp_db_netwerken';
         $user     = 'net24bkoskamp_bram';
-        $password = '@ppel123!';
+        $password = 'Welkom123!';
         $port     = 2083;
           
         mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
