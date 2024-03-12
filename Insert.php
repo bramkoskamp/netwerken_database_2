@@ -11,9 +11,9 @@
         error_reporting(E_ALL);
 
         $host     = 'localhost';
-        $db       = 'phptest';
-        $user     = 'harry';
-        $password = 'harry'; #QhkEsIp$SA)p
+        $db       = 'net24pveltman_users';
+        $user     = 'net24pveltman_user';
+        $password = '(2uuVWw)#J_='; #QhkEsIp$SA)p
         $port     = 3306;
         $charset  = 'utf8mb4';
           
