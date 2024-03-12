@@ -15,6 +15,7 @@
         $user     = 'net24bkoskamp_bram';
         $password = 'Welkom123!';
         $port     = 2083;
+        $charset  = 'utf8mb4';
           
         mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
